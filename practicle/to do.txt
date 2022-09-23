@@ -1,0 +1,29 @@
+public class Character{
+    public static void main(String[] args)
+    {
+        char ch ='\';
+        if (chr>=65 && chr<=90)
+        system.out.println("capital letter");
+        if (chr>=33 && chr<=47)
+        system.out.println("special character");
+        if (chr>=48 && chr<=57)
+        system.out.println("A number ");
+        if (chr>=97 && chr<=122)
+        system.out.println("small letter");
+    }
+}
+
+Write a program to print the following series 1,10,101,1010,10101........
+You10:08 AM
+Write a program to check if a charater is small case, capital case or a digit
+You10:36 AM
+Accept 2 integers from user and display their addition
+You10:41 AM
+Write a java program to print the first 5 numbers divisible by 7 and 5
+You10:53 AM
+ write a program to find the multiplication of 2 numbers without *using operator
+write a program to find whether the given number is a perfect number or not
+
+write a program to find whether the given number is a perfect number or not(range)
+
+ write a program to check a given number Armstrong number

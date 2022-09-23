@@ -1,0 +1,100 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b,c,d;
+    cout<<"enter rows and columns  of array"<<endl;
+    cin>>a>>b;
+    cout<<"enter rows and columns  of 2nd array"<<endl;
+    cin>>c>>d;
+  
+    
+    if(b!=c)
+    {
+        cout<<"enter column and row value again "<<endl;
+        cout<<"enter   columns  of array 1"<<endl;
+        cin>>b;
+        cout<<"enter  rows of array 2 "<<endl;
+        cin>>c;
+        
+    }
+    
+    int arr1[a][b],arr2[c][d], fin[a][d];
+    
+    cout<<"enter the values in array 1"<<endl;
+    
+   for(int i=0;i<a;i++){
+       for(int j=0;j<b;j++){
+           cout<<"enter the values of array 1  "<<i<<j;
+           cin>>arr1[i][j];
+           
+       }
+       
+   }
+   
+   cout<<"enter the values in array 2"<<endl;
+    
+   for(int i=0;i<c;i++){
+       for(int j=0;j<d;j++){
+           cout<<"enter the values of array 2  "<<i<<j;
+           cin>>arr2[i][j];
+           
+       }
+      
+   }
+   
+   //assign 0 to final array;
+   
+   for(int i=0;i<a;i++){
+       for(int j=0;j<d;j++){
+           
+           fin[i][j]=0;
+           
+       }
+      
+   }
+   
+   
+   cout<<"1 array "<<endl;
+    for(int i=0;i<a;i++){
+       for(int j=0;j<b;j++){
+         
+           cout<<arr1[i][j];
+           
+       }
+       cout<<endl;
+   }
+   cout<<"2 array "<<endl;
+    for(int i=0;i<c;i++){
+       for(int j=0;j<d;j++){
+         
+           cout<<arr2[i][j];
+           
+       }
+       cout<<endl;
+   }
+   
+   for(int i=0;i<a;i++){
+       for(int j=0;j<d;j++){
+           for (int k=0;k<b;k++){
+               fin[i][j]+=arr1[i][k]*arr2[k][j];
+           }
+       }
+   }
+   
+    cout<<"Final array"<<endl;
+    for(int i=0;i<a;i++){
+       for(int j=0;j<d;j++){
+         
+           cout<<fin[i][j]<<" ";
+           
+       }
+       cout<<endl;
+   }
+   
+   
+  
+    
+    
+
+}
